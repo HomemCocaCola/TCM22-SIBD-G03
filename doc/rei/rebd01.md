@@ -85,6 +85,7 @@ Entidade Cliente:
 - Número de telefone
 - Idade
 - Forma de pagamento
+- NIF
 
 
 Entidade Fornecedor:
@@ -103,8 +104,20 @@ Entidade Funcionário:
 - Número de telefone
 - Área de trabalho (Caixa, Repositor, Atendente)
 - Formação/Experiência (se aplicável)
+- Turno
 
 
 Com este modelo de dados, podemos informatizar o sistema de informação da mercearia e gerir facilmente as informações dos clientes, fornecedores e funcionários, bem como as transações financeiras e compras de mercadorias.
 
+## Modelação dos Problemas
 
+Um dos problemas que é possível ocorrer durante o processo de criação são
+
+1. Problemas com fornecedores: O sistema precisa ter uma tabela de fornecedores, que contém informações como nome, endereço e informações de contacto. No entanto, se um fornecedor for excluído do sistema, todos os produtos associados a esse fornecedor também serão excluídos. Isso pode levar a problemas se um fornecedor fornecer produtos exclusivos que não são fornecidos por outros fornecedores. Além disso, se houver um problema com um produto fornecido por um fornecedor, isso pode afetar todos os clientes que compraram esse produto.
+2. Número de identificação do cliente: Cada cliente deve ter um número de identificação exclusivo. No entanto, pode haver casos em que o sistema atribua o mesmo número de identificação a dois clientes diferentes. Isso pode levar a problemas se os registos dos clientes forem misturados ou se a identificação do cliente for usada para acessar informações pessoais.
+3. Horários de Turnos dos Funcionários: Cada funcionário tem um horário de trabalho específico, mas às vezes pode haver sobreposições de turno, o que pode levar a confusões e atrasos. Com um sistema adequado de agendamento de turnos, a empresa poderá evitar conflitos de horário e garantir que cada funcionário trabalhe nos horários mais adequados para eles. Isso aumentará a eficiência da empresa e ajudará a garantir que cada funcionário tenha um ambiente de trabalho seguro e confortável.
+
+---
+
+[< Previous](rei00.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rei02.md)
+:--- | :---: | ---: 
